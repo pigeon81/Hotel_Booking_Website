@@ -1,0 +1,8 @@
+.wrap > .container > .city-image > span > a > img {
+    width:150px;  
+    height: 150px;
+} 
+.wrap>.container> .city-image > span> img{
+    width:150px;  
+    height:150px;   
+}

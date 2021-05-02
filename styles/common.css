@@ -1,0 +1,19 @@
+body{ 
+    width : 100%;
+    height : 100%;
+}
+.wrap {
+    width : 100%;
+    height : 100%;
+
+}
+
+header > a > img {
+    width: 60px;
+    height: 60px;
+}
+
+footer > .social-media > span > a > img {
+    width: 20px;
+    height: 22px;
+}

@@ -1,0 +1,8 @@
+.wrap> .container > .list-view> #hotels>a> img {
+    width: 250px;
+    height: 200px;
+}
+.wrap> .container > .list-view> #hotels> img {
+    width: 250px;
+    height: 200px;
+}
