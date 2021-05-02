@@ -13,48 +13,60 @@
 <body>
     <div class="wrap">
         <div class="header">
-            <a href="index.html"><img src="assests/images/logo.png" alt="logo"></a>
-            <a href="login.html" target="_self">Login</a>
-        </div>
+            <div id="h1"><a href="index.html" target="_self"><img class="header-logo" src="assests/images/logo.png" alt="logo"></a></div>
+            <div id="h2"><a href="login.html" target="_self">Login</a></div>  
+        </div>  
         <div class="container">
-
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson">
-            <br>
-            
-            <form action="detail.html">
-                <label for="no-of-adults">Adults: </label>
-                <input type="text" id="no-of-adults" min="1" required>
-                <br>
-                <label for="name-of-cx" >Name: </label>
-                <input type="text" id="name-of-cx" required>
-                <br>
-                <label for="check-in-date">From Date: </label>
-                <input type="date" id="check-in-date"  required>
-                <br>
-                <label for="check-out-date">To Date: </label>
-                <input type="date" id="check-out-date" required>
-                <br>
-                <label for="total">Total: </label>
-                <input type="text" id="Total" readonly>
-                <br>
-                <a href="payment.html"><button type="button" > Book Now</button></a>
-
-            </form>
+            <div class="first-flex">
+                <div class="image"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></div>
+                <div class="formDiv">
+                        <form method="GET" action="payment.html" target="_self" autocomplete="off">
+                            <ul style="list-style-type: none;">
+                                <li class="listSty">
+                                    <label class="labelSty" for="adults">Adults:</label>
+                                    <input class="inputSty" type="number" id="adults" value="1" min="1" name="adults" required ></br>
+                                </li>
+                                <li class="listSty">
+                                    <label class="labelSty" for="name">Name: </label>
+                                    <input class="inputSty" type="text" id="name" name="name" required/></br>
+                                </li>
+                                <li class="listSty">
+                                    <label class="labelSty"  for="fromDate" >From Date:</label>
+                                    <input class="inputSty" type="date" id="fromDate" name="fromDate" required/></br>
+                                </li>
+                                <li class="listSty">
+                                    <label class="labelSty" for="toDate">To Date:</label>
+                                    <input class="inputSty" type="date" id="toDate" name="toDate" required/></br>
+                                </li>
+                                <li class="listSty">
+                                    <label class="labelSty" for="total">Total:</label>
+                                    <input class="inputSty" type="number" id="total" name="total" readonly></br>
+                                </li>
+                                <li style="display: flex; padding: 1em; justify-content: center;">
+                                    <a href="payment.html" target="_self">
+                                    <button style="padding:10px" id="bookNow">Book Now</button> </a> 
+                                </li>
+                            </ul>
+                        </form>
+                </div>                   
+            </div>
             <div class="hotel-desc">
                 <h2>Radisson Blu Hotel</h2>
-                <p>RATINGS</p>
+                <p style="font-family: cursive; font-weight: bold;">RATING</p>
                 <p>5 Star</p>
                 
-                <p>New Delhi</p>
-                <p>AMENITIES</p>
-            <ul>
-                <li>Room Service</li>
-                <li>Restaurant</li>
-                <li>Business center</li>
-                <li>Fitness center</li>
-                <li>Pool</li>
-            </ul>
-            <h5>DESCRIPTION</h5>
+                <p style="font-family: cursive; font-weight: bold;">AMENITIES</p>
+                <p>
+                    <ul>
+                        <li>Room Service</li>
+                        <li>Restaurant</li>
+                        <li>Business center</li>
+                        <li>Fitness center</li>
+                        <li>Pool</li>
+                    </ul>
+                </p>
+            
+                <h5 style="font-family: cursive;">DESCRIPTION</h5>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, totam labore. Quidem id incidunt iusto, doloribus commodi ipsam, tenetur voluptas reprehenderit repellendus maxime facilis autem quod sed veritatis praesentium fugiat?</p>
 
             </div>

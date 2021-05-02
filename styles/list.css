@@ -1,31 +1,57 @@
-.wrap> .container > .list-view> #hotels>a> img {
+.wrap> .container > .list-view> a> #hotels> .pic-Hotels> img {
     width: 250px;
     height: 200px;
 }    
-.wrap> .container > .list-view> #hotels> img {
+.wrap> .container > .list-view> #hotels> .pic-Hotels>img {
     width: 250px;
     height: 200px;
     
 }
 
-#hotels {
-    background-color: rgb(132,136,139);
-    width: 40%;
-    height: auto;
+.container> .list-view > #hotels {
+
+    background-color:lightgray;
     margin: 2%;
+    width:40%;
+    height: 200px;
+}
+.wrap > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.view-option>#one{
+    padding-right:1%;
+    padding-top: 2%;
+}
+.view-option>#two{
+    padding-left:1%;
+    padding-top: 2%;
+}
+.view-option>div{
+    font-weight: bold;
 }
 .view-option{
     display: flex;
     justify-content: center;
 }
-.view-option>span{
-    padding:2%;
-    font-weight: bold;
-}
+
 .list-view{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+
 }
 .map-view{
     display: none;
+}
+.list-view>#hotels, .list-view>a>#hotels{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.list-view>a>#hotels>.text-info, .list-view>#hotels>.text-info{
+    padding-left: 3%;
 }

@@ -11,11 +11,36 @@ body{
 
 }
 
-.wrap> .header > a > img {
-    width: 60px;
+.header>#h1>img{
     height: 60px;
+    width:60px;
+}
+.header>#h1>a>img{
+    height: 60px;
+    width:60px;
     
 }
+.header>#h1{
+    margin-left: 1%;
+}
+.header>#h2{
+    
+    margin-right:2%;
+}
+.footer>.social-media{
+    
+    margin-right: 2%;
+}
+.footer>.contact-us{
+    
+    margin-left:2%;
+}
+.footer>.copyright>span{
+    font-size: 10px;
+    vertical-align: baseline;
+}
+
+
 
 .footer{
     display: flex;
@@ -60,15 +85,3 @@ a  {
 }
 
 
-.footer> .social-media {
-    padding-right: 1%;
-}
-.footer> .contact-us {
-    padding-left: 1%;
-}
-.header > a> img {
-    padding-left: 1%;
-}
-.header> a {
-    padding-right: 1%;
-}

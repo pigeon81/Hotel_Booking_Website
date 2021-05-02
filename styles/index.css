@@ -1,22 +1,32 @@
-.wrap > .container > .city-image > span > a > img {
+.wrap > .container > .city-image > div> a >  img {
     width:150px;  
     height: 150px;
-    padding: 4%;
+    
     border-radius: 25%;
+        
+    box-shadow: 10px 10px 10px grey;
     
 } 
-.wrap>.container> .city-image > span> img{
+.wrap>.container> .city-image > div> img{
     width:150px;  
     height:150px; 
-    padding: 4%;  
+      
     border-radius: 25%;
+   
+    box-shadow: 10px 10px 10px grey;
+}
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 .city-image {
-    text-align: center;
-    position: relative;
-    margin-left: 15%;
-    margin-right: 15%;
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+    justify-content: space-around;
+    
 }
 
 .wrap> .container >.search-box {
@@ -35,7 +45,7 @@ input{
     border: 1px solid transparent;
     background-color: #f1f1f1;
     border-radius: 12px;
-    width:100%;
+    width:125%;
 }
 
 input[type="text" ]{
@@ -43,6 +53,49 @@ input[type="text" ]{
     font-size: 16px;
 }
 .container> .view-more{
-    margin:auto;
+    
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.images{
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1 ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25%;
+}
+.wrap >.container>.city-image>.images:hover .overlay, .city-images>.images>a:hover .overlay{
+    opacity: 1;
+}
+.wrap >.container>.city-image > .images >.overlay >.text {
+    color:#f1f1f1;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.wrap >.container>.city-image > .images >a >.overlay >.text {
+    color:#f1f1f1;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
