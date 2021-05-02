@@ -7,22 +7,26 @@
     <title>List</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <div class="wrap">
-        <header>
-            <a href=><img src="assests/images/logo.png" alt="logo"></a>
+        <div class="header">
+            <a href="index.html"><img src="assests/images/logo.png" alt="logo"></a>
             <a href="login.html" target="_self">Login</a>
-        </header>
+        </div>
         <div class="container">
-            <ul>
-                <li><a href="#list-view">List View</a></li>
-                <li><a href="#map-view">Map View</a></li>
-            </ul>
+            
+            <div class="view-option">
+                <span><a href="#list-view">List View</a></span>
+                <span><a href="#map-view">Map View</a></span>
+            </div>    
+
             <div class="list-view" id="list-view">
                 <div id="hotels">
-                    <a href="detail.html"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                    <a href="detail.html" id="hotels">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
                         <h3>Radisson Blu Hotel</h3>
                         <p>5 Star</p>
                         <p>New Delhi</p>
@@ -43,7 +47,7 @@
                 </div>
                 
             </div>
-            <div id="map-view">
+            <div class="map-view" id="map-view">
                 <div>
                     <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View">
                     <p>Map View</p>
@@ -53,8 +57,14 @@
             
 
         </div>
-        <footer>
-            <div class="contact-us"><a href="contact.html" target="_self">Contact Us</a></div>
+        <div class="footer">
+            <div class="contact-us">
+                <a href="contact.html" target="_self">Contact Us</a>
+            </div>
+
+            <div class="copyright">
+                <span>&#169; 2020 ROOM SEARCH PVT. LTD.</span>
+            </div>
 
             <div class="social-media">
                 <span><a href="https://www.facebook.com"><img  src="assests/images/facebook.png" alt="facebook"></a></span>
@@ -62,11 +72,9 @@
                 <span><a href="https://www.twitter.com"><img  src="assests/images/twitter.png" alt="twitter"></a></span>
                 
             </div>
-            <div class="copyright">
-                <p>© 2020 ROOM SEARCH PVT LTD</p>
-            </div>
+           
             
-        </footer>
+        </div>
     </div>
 
 </body>

@@ -3,6 +3,7 @@ body{
     height : 100%;
     background-color: #e0e0e0;
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 .wrap {
     width : 100%;
@@ -10,20 +11,64 @@ body{
 
 }
 
-header > a > img {
+.wrap> .header > a > img {
     width: 60px;
     height: 60px;
     
 }
-header {
+
+.footer{
+    display: flex;
+}
+.header {
     background-color: rosybrown;
+    position: sticky;
+    top: 0;
+    z-index:+1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer > .social-media > span > a > img {
+.footer > .social-media > span > a > img {
     width: 20px;
     height: 22px;
     
 }
-footer {
+.footer {
     background-color: rosybrown;
+    position: sticky;
+    bottom: 0px;
+    z-index:+1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    height:64px;
+}    
+
+a  {
+    text-decoration: none;
+    color: black;
+}
+
+.footer>.copyright>span{
+    margin: auto;
+    height: max-content;
+    font-size: 10px;
+    vertical-align: bottom;
+}
+
+
+.footer> .social-media {
+    padding-right: 1%;
+}
+.footer> .contact-us {
+    padding-left: 1%;
+}
+.header > a> img {
+    padding-left: 1%;
+}
+.header> a {
+    padding-right: 1%;
 }

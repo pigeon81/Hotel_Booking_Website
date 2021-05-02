@@ -14,3 +14,18 @@
     height: auto;
     margin: 2%;
 }
+.view-option{
+    display: flex;
+    justify-content: center;
+}
+.view-option>span{
+    padding:2%;
+    font-weight: bold;
+}
+.list-view{
+    display: flex;
+    flex-wrap: wrap;
+}
+.map-view{
+    display: none;
+}
