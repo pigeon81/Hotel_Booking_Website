@@ -1,8 +1,16 @@
 .wrap> .container > .list-view> #hotels>a> img {
     width: 250px;
     height: 200px;
-}
+}    
 .wrap> .container > .list-view> #hotels> img {
     width: 250px;
     height: 200px;
+    
+}
+
+#hotels {
+    background-color: rgb(132,136,139);
+    width: 40%;
+    height: auto;
+    margin: 2%;
 }

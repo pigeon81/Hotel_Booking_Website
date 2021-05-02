@@ -1,8 +1,30 @@
 .wrap > .container > .city-image > span > a > img {
     width:150px;  
     height: 150px;
+    padding: 4%;
+    border-radius: 25%;
+    
 } 
 .wrap>.container> .city-image > span> img{
     width:150px;  
-    height:150px;   
+    height:150px; 
+    padding: 4%;  
+    border-radius: 25%;
+}
+
+.city-image {
+    text-align: center;
+
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.wrap> .container >.search-box {
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    
 }
