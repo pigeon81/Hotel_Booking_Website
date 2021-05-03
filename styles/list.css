@@ -1,57 +1,53 @@
-.wrap> .container > .list-view> a> #hotels> .pic-Hotels> img {
-    width: 250px;
-    height: 200px;
-}    
-.wrap> .container > .list-view> #hotels> .pic-Hotels>img {
-    width: 250px;
-    height: 200px;
-    
-}
-
-.container> .list-view > #hotels {
-
-    background-color:lightgray;
-    margin: 2%;
-    width:40%;
-    height: 200px;
-}
-.wrap > .container{
+.content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 4%;
+    margin-top:4%;
 }
-
-.view-option>#one{
-    padding-right:1%;
-    padding-top: 2%;
+.list-view>#hotel-list>.image>img, .list-view>a>#hotel-list>.image>img{
+    height:200px;
+    width:250px;
 }
-.view-option>#two{
-    padding-left:1%;
-    padding-top: 2%;
-}
-.view-option>div{
-    font-weight: bold;
+.content>.list-view>#hotel-list{
+    margin:2%;
+    background-color:lightgray;
+    width:40%;
+    height: 200px;
 }
 .view-option{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: fixed;
+    left:45%;
+    
+}
+.map-view{
+    margin-left: 2%;
+    margin-right: 2%;
     display: flex;
     justify-content: center;
 }
 
 .list-view{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
+}
 
-}
-.map-view{
-    display: none;
-}
-.list-view>#hotels, .list-view>a>#hotels{
+.list-view>#hotel-list, .list-view>a>#hotel-list{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
-.list-view>a>#hotels>.text-info, .list-view>#hotels>.text-info{
+.list-view>a>#hotel-list>.textDiv, .list-view>#hotel-list>.textDiv{
     padding-left: 3%;
+}
+.textDiv{
+    margin-top: 2%;
+    text-decoration: none;
+}
+
+.content>.list-view>#hotel-list:hover{
+    background-color: rosybrown;
 }
